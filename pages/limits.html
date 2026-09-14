@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Limits | The Calculus Lab</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">∫ CALCULUS</div>
+
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\limits.html">EXPLORE LIMITS</a></li>
+                <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\derivatives.html">EXPLORE DERIVATIVES</a></li>
+                <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\continuity.html">CONTINUITY</a></li>
+                <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\visual-lab.html">VISUAL LAB</a></li>
+                <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\applications.html">APPLICATIONS</a></li>
+                <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\challenges.html">CHALLENGES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="limits-page">
+
+        <section class="limits-hero">
+
+            <p class="eyebrow">CHAPTER 01</p>
+
+            <h1>LIMITS</h1>
+
+            <p class="intro">
+                The mathematics of approaching a value.
+            </p>
+
+            <div class="main-equation">
+                lim <span>x → a</span> f(x) = L
+            </div>
+
+        </section>
+
+
+        <section class="concept">
+
+            <p class="section-label">THE CENTRAL IDEA</p>
+
+            <h2>What is a limit?</h2>
+
+            <p>
+                A limit describes the value that a function approaches
+                as its input gets closer and closer to a particular value.
+            </p>
+
+            <div class="concept-box">
+
+                <div class="big-symbol">
+                    x → a
+                </div>
+
+                <div class="concept-arrow">→</div>
+
+                <div class="big-symbol">
+                    f(x) → L
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="example">
+
+            <p class="section-label">FIRST EXAMPLE</p>
+
+            <h2>Evaluate the limit</h2>
+
+            <div class="problem">
+                lim <span>x → 2</span>
+                (x² − 4)/(x − 2)
+            </div>
+
+            <div class="solution">
+
+                <p><strong>Step 1:</strong> Factorise the numerator.</p>
+
+                <div class="math">
+                    x² − 4 = (x − 2)(x + 2)
+                </div>
+
+                <p><strong>Step 2:</strong> Cancel the common factor.</p>
+
+                <div class="math">
+                    (x − 2)(x + 2)/(x − 2) = x + 2
+                </div>
+
+                <p><strong>Step 3:</strong> Now take the limit.</p>
+
+                <div class="answer">
+                    ∴ &nbsp; lim <span>x → 2</span> (x + 2) = 4
+                </div>
+
+            </div>
+
+        </section>
+
+<section class="interactive-limit">
+
+    <p class="section-label">INTERACTIVE LAB</p>
+
+    <h2>Watch a Limit Approach</h2>
+
+    <p class="lab-description">
+        Move x closer to 2 and observe what happens to the function.
+    </p>
+
+    <div class="limit-lab">
+
+        <div class="lab-equation">
+            f(x) =
+            <span>(x² − 4)</span>
+            /
+            <span>(x − 2)</span>
+        </div>
+
+        <label for="xValue">
+            Choose x:
+        </label>
+
+        <input
+            type="range"
+            id="xValue"
+            min="1"
+            max="3"
+            step="0.01"
+            value="1"
+        >
+
+        <div class="values">
+
+            <div>
+                <small>x</small>
+                <strong id="xDisplay">1.00</strong>
+            </div>
+
+            <div>
+                <small>f(x)</small>
+                <strong id="fDisplay">3.00</strong>
+            </div>
+
+        </div>
+
+        <div class="limit-result">
+            As x → 2,
+            <strong>f(x) → 4</strong>
+        </div>
+
+    </div>
+
+</section>
+        <section class="graph-section">
+
+    <p class="section-label">VISUAL CALCULUS</p>
+
+    <h2>See the Limit</h2>
+
+    <p class="lab-description">
+        The graph shows how f(x) = x + 2 behaves as x approaches 2.
+    </p>
+
+    <div class="graph-container">
+        <canvas id="limitGraph"></canvas>
+    </div>
+
+    <div class="graph-info">
+        <div>
+            <span>x =</span>
+            <strong id="graphX">1.00</strong>
+        </div>
+
+        <div>
+            <span>f(x) =</span>
+            <strong id="graphY">3.00</strong>
+        </div>
+
+        <div>
+            <span>Limit =</span>
+            <strong>4</strong>
+        </div>
+    </div>
+
+</section>
+<section class="topics">
+
+            <p class="section-label">EXPLORE</p>
+
+            <h2>Topics in Limits</h2>
+
+            <div class="topic-grid">
+
+                <div class="topic-card">
+                    <h3>01</h3>
+                    <h4>One-Sided Limits</h4>
+                    <p>
+                        Explore limits from the left and from the right.
+                    </p>
+                </div>
+
+                <div class="topic-card">
+                    <h3>02</h3>
+                    <h4>Infinite Limits</h4>
+                    <p>
+                        What happens when a function grows without bound?
+                    </p>
+                </div>
+
+                <div class="topic-card">
+                    <h3>03</h3>
+                    <h4>Limits at Infinity</h4>
+                    <p>
+                        Study the behaviour of functions as x approaches infinity.
+                    </p>
+                </div>
+
+                <div class="topic-card">
+                    <h3>04</h3>
+                    <h4>Standard Limits</h4>
+                    <p>
+                        Discover the fundamental limits used throughout calculus.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+<script src="C:/Users/Deeptangshu Goldar/Desktop/Limits and Derivatives/script.js"></script>
+</body>
+
+</html>
