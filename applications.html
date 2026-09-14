@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Applications | The Calculus Lab</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <div class="logo">∫ CALCULUS</div>
+
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="limits.html">LIMITS</a></li>
+            <li><a href="derivatives.html">DERIVATIVES</a></li>
+            <li><a href="continuity.html">CONTINUITY</a></li>
+            <li><a href="visual-lab.html">VISUAL LAB</a></li>
+            <li><a href="applications.html">APPLICATIONS</a></li>
+            <li><a href="challenges.html">CHALLENGES</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main class="applications-page">
+
+    <!-- HERO -->
+
+    <section class="limits-hero">
+
+        <p class="eyebrow">CALCULUS IN THE REAL WORLD</p>
+
+        <h1>
+            APPLICATIONS<br>
+            <span>OF CALCULUS</span>
+        </h1>
+
+        <p class="intro">
+            Calculus is the mathematics of change.
+            From motion to physics, engineering to economics,
+            derivatives allow us to describe how quantities change.
+        </p>
+
+    </section>
+
+
+    <!-- MOTION -->
+
+    <section class="application-section">
+
+        <p class="section-label">01 · MOTION</p>
+
+        <h2>Position → Velocity → Acceleration</h2>
+
+        <p class="lab-description">
+            If the position of an object is known as a function of time,
+            derivatives reveal its instantaneous velocity and acceleration.
+        </p>
+
+        <div class="application-equation">
+
+            <div>
+                <small>POSITION</small>
+                <strong>s(t)</strong>
+            </div>
+
+            <div class="operator">→</div>
+
+            <div>
+                <small>VELOCITY</small>
+                <strong>v(t) = s′(t)</strong>
+            </div>
+
+            <div class="operator">→</div>
+
+            <div>
+                <small>ACCELERATION</small>
+                <strong>a(t) = v′(t) = s″(t)</strong>
+            </div>
+
+        </div>
+
+        <div class="example-box">
+
+            <p>Example</p>
+
+            <div class="math">
+                s(t) = t² + 3t
+            </div>
+
+            <div class="math">
+                v(t) = s′(t) = 2t + 3
+            </div>
+
+            <div class="math">
+                a(t) = v′(t) = 2
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OPTIMIZATION -->
+
+    <section class="application-section">
+
+        <p class="section-label">02 · OPTIMIZATION</p>
+
+        <h2>Finding the Best Possible Value</h2>
+
+        <p class="lab-description">
+            Derivatives help locate maximum and minimum values.
+            This is the mathematical foundation of optimization.
+        </p>
+
+        <div class="optimization-box">
+
+            <div class="optimization-problem">
+
+                <p class="problem-title">PROBLEM</p>
+
+                <p>
+                    Find the dimensions of a rectangle with perimeter
+                    20 units that produces the maximum possible area.
+                </p>
+
+            </div>
+
+            <div class="optimization-solution">
+
+                <p class="problem-title">CALCULUS</p>
+
+                <div class="math">
+                    2x + 2y = 20
+                </div>
+
+                <div class="math">
+                    y = 10 - x
+                </div>
+
+                <div class="math">
+                    A(x) = x(10-x)
+                </div>
+
+                <div class="math">
+                    A′(x) = 10 - 2x
+                </div>
+
+                <div class="math">
+                    A′(x)=0
+                </div>
+
+                <div class="math answer">
+                    x = 5
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="conclusion">
+            Therefore the maximum-area rectangle is a
+            <strong>5 × 5 square</strong>.
+        </p>
+
+    </section>
+
+
+    <!-- PHYSICS -->
+
+    <section class="application-section">
+
+        <p class="section-label">03 · PHYSICS</p>
+
+        <h2>The Language of Change</h2>
+
+        <p class="lab-description">
+            Many fundamental quantities in physics are related through
+            derivatives.
+        </p>
+
+        <div class="physics-grid">
+
+            <div class="physics-card">
+
+                <h3>Motion</h3>
+
+                <div class="math">
+                    v = ds/dt
+                </div>
+
+                <p>
+                    Velocity is the rate of change of position.
+                </p>
+
+            </div>
+
+
+            <div class="physics-card">
+
+                <h3>Acceleration</h3>
+
+                <div class="math">
+                    a = dv/dt
+                </div>
+
+                <p>
+                    Acceleration is the rate of change of velocity.
+                </p>
+
+            </div>
+
+
+            <div class="physics-card">
+
+                <h3>Electricity</h3>
+
+                <div class="math">
+                    I = dQ/dt
+                </div>
+
+                <p>
+                    Electric current describes the rate at which
+                    electric charge flows.
+                </p>
+
+            </div>
+
+
+            <div class="physics-card">
+
+                <h3>Wave Motion</h3>
+
+                <div class="math">
+                    ∂²ψ/∂t²
+                </div>
+
+                <p>
+                    Differential equations describe how waves evolve
+                    through space and time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ECONOMICS -->
+
+    <section class="application-section">
+
+        <p class="section-label">04 · ECONOMICS</p>
+
+        <h2>Marginal Thinking</h2>
+
+        <p class="lab-description">
+            Derivatives measure how rapidly economic quantities change.
+        </p>
+
+        <div class="economics-box">
+
+            <div>
+
+                <small>TOTAL COST</small>
+
+                <div class="math">
+                    C(q)
+                </div>
+
+            </div>
+
+            <div class="operator">
+                →
+            </div>
+
+            <div>
+
+                <small>MARGINAL COST</small>
+
+                <div class="math">
+                    C′(q)
+                </div>
+
+            </div>
+
+            <div class="operator">
+                →
+            </div>
+
+            <div>
+
+                <small>INTERPRETATION</small>
+
+                <p>
+                    Approximate additional cost of producing
+                    one more unit.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIG IDEA -->
+
+    <section class="calculus-ending">
+
+        <p class="eyebrow">THE BIG IDEA</p>
+
+        <h2>
+            Calculus doesn't just describe<br>
+            <span>where things are.</span>
+        </h2>
+
+        <p>
+            It describes how they change.
+        </p>
+
+        <div class="big-equation">
+            change → rate of change → prediction
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>

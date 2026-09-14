@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Challenges | The Calculus Lab</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">∫ CALCULUS</div>
+
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="limits.html">LIMITS</a></li>
+            <li><a href="derivatives.html">DERIVATIVES</a></li>
+            <li><a href="continuity.html">CONTINUITY</a></li>
+            <li><a href="visual-lab.html">VISUAL LAB</a></li>
+            <li><a href="applications.html">APPLICATIONS</a></li>
+            <li><a href="challenges.html">CHALLENGES</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="challenges-page">
+
+    <!-- HERO -->
+
+    <section class="limits-hero">
+
+        <p class="eyebrow">THE FINAL TEST</p>
+
+        <h1>
+            CALCULUS<br>
+            <span>CHALLENGES</span>
+        </h1>
+
+        <p class="intro">
+            Limits. Derivatives. Continuity.
+            Put everything together and test your mathematical thinking.
+        </p>
+
+    </section>
+
+
+    <!-- CHALLENGE 01 -->
+
+    <section class="challenge-section">
+
+        <div class="challenge-number">
+            CHALLENGE 01
+        </div>
+
+        <h2>Evaluate the Limit</h2>
+
+        <div class="challenge-box">
+
+            <div class="challenge-question">
+                <p>Find:</p>
+
+                <div class="challenge-math">
+                    lim <span>x → 2</span>
+                    (x² − 4)/(x − 2)
+                </div>
+            </div>
+
+            <div class="challenge-answer">
+
+                <input
+                    type="number"
+                    id="answer1"
+                    placeholder="Your answer"
+                >
+
+                <button onclick="checkAnswer(1)">
+                    SUBMIT
+                </button>
+
+                <p id="result1"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHALLENGE 02 -->
+
+    <section class="challenge-section">
+
+        <div class="challenge-number">
+            CHALLENGE 02
+        </div>
+
+        <h2>Differentiate</h2>
+
+        <div class="challenge-box">
+
+            <div class="challenge-question">
+
+                <p>Find f′(x):</p>
+
+                <div class="challenge-math">
+                    f(x) = 3x³ − 5x² + 7x
+                </div>
+
+            </div>
+
+            <div class="challenge-answer">
+
+                <input
+                    type="text"
+                    id="answer2"
+                    placeholder="Your derivative"
+                >
+
+                <button onclick="checkAnswer(2)">
+                    SUBMIT
+                </button>
+
+                <p id="result2"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHALLENGE 03 -->
+
+    <section class="challenge-section">
+
+        <div class="challenge-number">
+            CHALLENGE 03
+        </div>
+
+        <h2>Continuity Test</h2>
+
+        <div class="challenge-box">
+
+            <div class="challenge-question">
+
+                <p>
+                    For what value of k is the following function
+                    continuous at x = 2?
+                </p>
+
+                <div class="challenge-math">
+                    f(x) =
+                    <br>
+                    { x² + k, &nbsp; x &lt; 2 }
+                    <br>
+                    { 8, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ≥ 2 }
+                </div>
+
+            </div>
+
+            <div class="challenge-answer">
+
+                <input
+                    type="number"
+                    id="answer3"
+                    placeholder="Value of k"
+                >
+
+                <button onclick="checkAnswer(3)">
+                    SUBMIT
+                </button>
+
+                <p id="result3"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHALLENGE 04 -->
+
+    <section class="challenge-section">
+
+        <div class="challenge-number">
+            CHALLENGE 04
+        </div>
+
+        <h2>First Principles</h2>
+
+        <div class="challenge-box">
+
+            <div class="challenge-question">
+
+                <p>
+                    Using the definition of the derivative,
+                    determine the derivative of:
+                </p>
+
+                <div class="challenge-math">
+                    f(x) = x²
+                </div>
+
+            </div>
+
+            <div class="challenge-answer">
+
+                <input
+                    type="text"
+                    id="answer4"
+                    placeholder="Your answer"
+                >
+
+                <button onclick="checkAnswer(4)">
+                    SUBMIT
+                </button>
+
+                <p id="result4"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="challenge-ending">
+
+        <p class="eyebrow">CALCULUS LAB</p>
+
+        <h2>
+            THINK.<br>
+            <span>CALCULATE.</span><br>
+            UNDERSTAND.
+        </h2>
+
+        <p>
+            Mathematics becomes powerful when you understand
+            not only the answer, but why it works.
+        </p>
+
+    </section>
+
+</main>
+
+
+<script src="../script.js"></script>
+
+</body>
+
+</html>

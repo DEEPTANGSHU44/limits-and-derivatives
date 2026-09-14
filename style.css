@@ -1,0 +1,1014 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #1c2945;
+}
+
+nav {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul a {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+ul a:hover {
+    color: #7dd3fc;
+}
+
+/* HERO */
+
+.hero {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 10%;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.eyebrow {
+    color: #7dd3fc;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(60px, 8vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -4px;
+}
+
+h1 span {
+    color: #7dd3fc;
+}
+
+.subtitle {
+    margin-top: 30px;
+    max-width: 600px;
+    color: #a9b8d0;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 15px 24px;
+    border: 1px solid #7dd3fc;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.primary {
+    background: #7dd3fc;
+    color: #050816;
+}
+
+.secondary:hover {
+    background: #7dd3fc;
+    color: #050816;
+}
+
+/* EQUATIONS */
+
+.equation {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 2;
+    color: #dbeafe;
+    text-align: center;
+}
+
+.equation span {
+    color: #7dd3fc;
+}
+
+.arrow {
+    font-size: 35px;
+    color: #7dd3fc;
+}
+
+.equation small {
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    nav {
+        height: auto;
+        padding: 25px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 25px;
+    }
+
+    .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}
+/* =========================
+   LIMITS PAGE
+========================= */
+
+.limits-page {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.limits-hero {
+    min-height: 65vh;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.limits-hero h1 {
+    font-size: clamp(70px, 11vw, 150px);
+    letter-spacing: -5px;
+}
+
+.intro {
+    margin-top: 20px;
+    color: #a9b8d0;
+    font-size: 22px;
+}
+
+.main-equation {
+    margin-top: 55px;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    color: #dbeafe;
+}
+
+.main-equation span,
+.problem span,
+.answer span {
+    color: #7dd3fc;
+}
+
+/* GENERAL SECTIONS */
+
+.concept,
+.example,
+.topics {
+    padding: 100px 8%;
+    border-top: 1px solid #1c2945;
+}
+
+.section-label {
+    color: #7dd3fc;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.concept h2,
+.example h2,
+.topics h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.concept > p:not(.section-label) {
+    color: #a9b8d0;
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 750px;
+}
+
+/* LIMIT VISUAL */
+
+.concept-box {
+    margin-top: 55px;
+    border: 1px solid #1c2945;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    background: #080d20;
+}
+
+.big-symbol {
+    font-family: Georgia, serif;
+    font-size: 42px;
+}
+
+.concept-arrow {
+    font-size: 45px;
+    color: #7dd3fc;
+}
+
+/* EXAMPLE */
+
+.problem {
+    margin: 45px 0;
+    padding: 30px;
+    background: #080d20;
+    border-left: 3px solid #7dd3fc;
+    font-family: Georgia, serif;
+    font-size: 34px;
+}
+
+.solution {
+    max-width: 800px;
+    color: #b8c7e6;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.math {
+    margin: 20px 0 30px;
+    padding: 20px;
+    background: #080d20;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #dbeafe;
+}
+
+.answer {
+    margin-top: 30px;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: white;
+}
+
+/* TOPIC CARDS */
+
+.topic-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.topic-card {
+    padding: 35px;
+    min-height: 200px;
+    border: 1px solid #1c2945;
+    background: #080d20;
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-6px);
+    border-color: #7dd3fc;
+}
+
+.topic-card h3 {
+    color: #7dd3fc;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.topic-card h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.topic-card p {
+    color: #8fa0bd;
+    line-height: 1.6;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .limits-hero {
+        padding: 80px 25px;
+    }
+
+    .concept,
+    .example,
+    .topics {
+        padding: 70px 25px;
+    }
+
+    .main-equation {
+        font-size: 32px;
+    }
+
+    .concept-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================
+   INTERACTIVE GRAPH
+========================= */
+
+.interactive-limit,
+.graph-section {
+    padding: 100px 8%;
+    border-top: 1px solid #1c2945;
+}
+
+.interactive-limit h2,
+.graph-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.lab-description {
+    color: #a9b8d0;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.limit-lab {
+    margin-top: 40px;
+    padding: 40px;
+    background: #080d20;
+    border: 1px solid #1c2945;
+}
+
+.lab-equation {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.lab-equation span {
+    color: #7dd3fc;
+}
+
+.limit-lab label {
+    display: block;
+    margin-bottom: 15px;
+    color: #a9b8d0;
+}
+
+#xValue {
+    width: 100%;
+    cursor: pointer;
+}
+
+.values {
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.values div,
+.graph-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.values small,
+.graph-info span {
+    color: #7d8da8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.values strong,
+.graph-info strong {
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.limit-result {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #1c2945;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.limit-result strong {
+    color: #7dd3fc;
+}
+
+.graph-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: #080d20;
+    border: 1px solid #1c2945;
+}
+
+#limitGraph {
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+.graph-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding: 25px;
+    background: #080d20;
+    border: 1px solid #1c2945;
+}
+/* =========================
+   VISUAL LAB
+========================= */
+
+.visual-lab {
+    padding: 100px 8%;
+    border-top: 1px solid #1c2945;
+}
+
+.visual-lab h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.function-controls {
+    display: flex;
+    gap: 12px;
+    margin: 40px 0 25px;
+    flex-wrap: wrap;
+}
+
+.function-controls button {
+    padding: 13px 25px;
+    background: #080d20;
+    color: white;
+    border: 1px solid #1c2945;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.function-controls button:hover {
+    border-color: #7dd3fc;
+    color: #7dd3fc;
+}
+
+.function-display {
+    margin-top: 20px;
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+.function-display strong {
+    color: #7dd3fc;
+}
+
+.visual-page .graph-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #080d20;
+    border: 1px solid #1c2945;
+}
+
+#visualGraph {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+/* =========================
+   DERIVATIVE LAB
+========================= */
+
+.derivative-lab {
+    margin-top: 50px;
+    padding: 45px;
+    border: 1px solid #1c2945;
+    background: #080d20;
+}
+
+.derivative-lab h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.derivative-lab label {
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #a9b8d0;
+}
+
+.derivative-lab label strong {
+    color: #7dd3fc;
+}
+
+#hValue {
+    width: 100%;
+    cursor: pointer;
+}
+
+.derivative-result {
+    display: flex;
+    gap: 70px;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #1c2945;
+}
+
+.derivative-result div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.derivative-result span {
+    color: #7d8da8;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.derivative-result strong {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #7dd3fc;
+}
+/* ================================
+   APPLICATIONS PAGE
+================================ */
+
+.applications-page {
+    background: #050816;
+}
+
+.application-section {
+    padding: 100px 8%;
+    border-top: 1px solid #1c2945;
+}
+
+.application-section h2 {
+    font-size: clamp(38px, 5vw, 60px);
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.application-equation {
+    margin-top: 45px;
+    padding: 40px;
+    background: #080d20;
+    border: 1px solid #1c2945;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.application-equation div:not(.operator) {
+    text-align: center;
+}
+
+.application-equation small,
+.economics-box small {
+    display: block;
+    color: #7d8da8;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.application-equation strong {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #7dd3fc;
+}
+
+.operator {
+    font-size: 32px;
+    color: #7dd3fc;
+}
+
+.example-box {
+    margin-top: 30px;
+    padding: 35px;
+    border-left: 3px solid #7dd3fc;
+    background: #080d20;
+}
+
+.example-box > p {
+    color: #7dd3fc;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.math {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #dbeafe;
+}
+
+.optimization-box {
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+
+    background: #1c2945;
+    border: 1px solid #1c2945;
+}
+
+.optimization-problem,
+.optimization-solution {
+    padding: 40px;
+    background: #080d20;
+}
+
+.problem-title {
+    color: #7dd3fc;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.optimization-problem p:not(.problem-title) {
+    color: #a9b8d0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.answer {
+    color: #7dd3fc;
+    font-size: 32px;
+}
+
+.conclusion {
+    margin-top: 30px;
+    color: #a9b8d0;
+    font-size: 18px;
+}
+
+.conclusion strong {
+    color: #7dd3fc;
+}
+
+.physics-grid {
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.physics-card {
+    padding: 35px;
+    background: #080d20;
+    border: 1px solid #1c2945;
+
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.physics-card:hover {
+    transform: translateY(-5px);
+    border-color: #7dd3fc;
+}
+
+.physics-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.physics-card .math {
+    color: #7dd3fc;
+    margin-bottom: 10px;
+}
+
+.physics-card p {
+    color: #a9b8d0;
+    line-height: 1.6;
+}
+
+.economics-box {
+    margin-top: 45px;
+    padding: 45px;
+
+    background: #080d20;
+    border: 1px solid #1c2945;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.economics-box > div:not(.operator) {
+    max-width: 250px;
+}
+
+.economics-box p {
+    color: #a9b8d0;
+    line-height: 1.6;
+}
+
+.calculus-ending {
+    min-height: 70vh;
+    padding: 120px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-top: 1px solid #1c2945;
+}
+
+.calculus-ending h2 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-top: 20px;
+}
+
+.calculus-ending h2 span {
+    color: #7dd3fc;
+}
+
+.calculus-ending > p:not(.eyebrow) {
+    margin-top: 30px;
+    color: #a9b8d0;
+    font-size: 22px;
+}
+
+.big-equation {
+    margin-top: 60px;
+    font-family: Georgia, serif;
+    font-size: clamp(22px, 4vw, 42px);
+    color: #7dd3fc;
+    letter-spacing: 2px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .application-section {
+        padding: 70px 25px;
+    }
+
+    .application-equation {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .operator {
+        transform: rotate(90deg);
+    }
+
+    .optimization-box {
+        grid-template-columns: 1fr;
+    }
+
+    .physics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .economics-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .calculus-ending {
+        min-height: 60vh;
+        padding: 90px 25px;
+    }
+
+}
+/* ================================
+   CHALLENGES PAGE
+================================ */
+
+.challenges-page {
+    background: #050816;
+}
+
+.challenge-section {
+    padding: 100px 8%;
+    border-top: 1px solid #1c2945;
+}
+
+.challenge-number {
+    color: #7dd3fc;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.challenge-section h2 {
+    font-size: clamp(38px, 5vw, 60px);
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+}
+
+.challenge-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    padding: 45px;
+
+    background: #080d20;
+    border: 1px solid #1c2945;
+}
+
+.challenge-question p {
+    color: #a9b8d0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.challenge-math {
+    margin-top: 25px;
+
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.8;
+
+    color: #dbeafe;
+}
+
+.challenge-math span {
+    color: #7dd3fc;
+}
+
+.challenge-answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.challenge-answer input {
+    width: 100%;
+    padding: 16px;
+
+    background: #050816;
+    color: white;
+
+    border: 1px solid #1c2945;
+
+    font-size: 17px;
+    outline: none;
+}
+
+.challenge-answer input:focus {
+    border-color: #7dd3fc;
+}
+
+.challenge-answer button {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background: #7dd3fc;
+    color: #050816;
+
+    border: none;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+.challenge-answer button:hover {
+    opacity: 0.85;
+}
+
+.challenge-answer p {
+    margin-top: 18px;
+    min-height: 25px;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.challenge-ending {
+    min-height: 75vh;
+
+    padding: 120px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-top: 1px solid #1c2945;
+}
+
+.challenge-ending h2 {
+    margin-top: 20px;
+
+    font-size: clamp(50px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.challenge-ending h2 span {
+    color: #7dd3fc;
+}
+
+.challenge-ending > p:not(.eyebrow) {
+    margin-top: 35px;
+
+    max-width: 650px;
+
+    color: #a9b8d0;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .challenge-section {
+        padding: 70px 25px;
+    }
+
+    .challenge-box {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .challenge-math {
+        font-size: 24px;
+    }
+
+    .challenge-ending {
+        padding: 90px 25px;
+    }
+
+}

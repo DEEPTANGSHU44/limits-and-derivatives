@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visual Lab | The Calculus Lab</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">∫ CALCULUS</div>
+
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="limits.html">LIMITS</a></li>
+            <li><a href="derivatives.html">DERIVATIVES</a></li>
+            <li><a href="continuity.html">CONTINUITY</a></li>
+            <li><a href="visual-lab.html">VISUAL LAB</a></li>
+            <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\applications.html">APPLICATIONS</a></li>
+            <li><a href="C:\Users\Deeptangshu Goldar\Desktop\Limits and Derivatives\pages\challenges.html">CHALLENGES</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main class="visual-page">
+
+    <section class="limits-hero">
+
+        <p class="eyebrow">CALCULUS LAB</p>
+
+        <h1>VISUAL<br>CALCULUS</h1>
+
+        <p class="intro">
+            See mathematics instead of simply reading it.
+        </p>
+
+    </section>
+
+
+    <section class="visual-lab">
+
+        <p class="section-label">FUNCTION EXPLORER</p>
+
+        <h2>Explore a Function</h2>
+
+        <p class="lab-description">
+            Choose a function and observe its shape on the coordinate plane.
+        </p>
+
+        <div class="function-controls">
+
+            <button onclick="plotFunction('square')">
+                x²
+            </button>
+
+            <button onclick="plotFunction('cube')">
+                x³
+            </button>
+
+            <button onclick="plotFunction('sine')">
+                sin(x)
+            </button>
+
+            <button onclick="plotFunction('absolute')">
+                |x|
+            </button>
+
+        </div>
+
+        <div class="graph-container">
+            <canvas id="visualGraph"></canvas>
+        </div>
+
+        <div class="function-display">
+            f(x) = <strong id="functionName">x²</strong>
+        </div>
+        <div class="derivative-lab">
+
+    <p class="section-label">DERIVATIVE FROM A LIMIT</p>
+
+    <h2>From Secant to Tangent</h2>
+
+    <p class="lab-description">
+        Move h toward zero and watch the secant line approach
+        the tangent line.
+    </p>
+
+    <label for="hValue">
+        h = <strong id="hDisplay">1.00</strong>
+    </label>
+
+    <input
+        type="range"
+        id="hValue"
+        min="0.01"
+        max="2"
+        step="0.01"
+        value="1"
+    >
+
+    <div class="derivative-result">
+        <div>
+            <span>Secant slope</span>
+            <strong id="secantSlope">3.00</strong>
+        </div>
+
+        <div>
+            <span>Derivative at x = 1</span>
+            <strong id="derivativeValue">2.00</strong>
+        </div>
+    </div>
+
+</div>
+
+    </section>
+
+</main>
+
+
+<script src="../visual-lab.js"></script>
+
+</body>
+
+</html>
